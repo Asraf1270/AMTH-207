@@ -1,0 +1,3 @@
+Hello, file I/O
+Line 2 : Learning C++
+Line 3 : 51

@@ -1,2 +1,2 @@
-# AMTH-207
+## AMTH-207
 This is my C++ learning program 
