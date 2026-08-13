@@ -24,8 +24,10 @@ int main(){
     Student s = {"Md Asraful Islam", 51, 75.6};
     writeBinary.write((char*)&s, sizeof(Student));
     writeBinary.close();
-    
+
     cout << "File writing successfully." << endl;
+    // close file
+    writeBinary.close();
     return 0;
     
 }

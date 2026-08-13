@@ -25,5 +25,7 @@ int main()
     cout << "weight :" << weight << endl;
     cout << "Height : " << height << endl;
 
+    // close file
+    readFile.close();
     return 0;
 }
