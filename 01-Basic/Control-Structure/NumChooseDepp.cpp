@@ -8,19 +8,34 @@ int main() {
     int secret = rand() % 100 + 1;
     int guess, attempts = 0;
     
-    cout << "🎯 Guess the number (1-100): ";
+    cout << "🎯 Guess the number (1-100): " <<endl;
     
     do {
         cin >> guess;
         attempts++;
         
-        if (guess > secret) 
-            cout << "📉 Too high! Try again: ";
-        else if (guess < secret) 
-            cout << "📈 Too low! Try again: ";
-        else 
+        if (guess == secret) {
             cout << "🎉 Correct! You got it in " << attempts << " attempts!" << endl;
-            
+        }
+        else if (abs(guess - secret) <= 5)
+        {
+            if(guess < secret){
+                cout << "Guess very close! Try little higher" << endl;
+            }
+            else{
+                cout << "Guess very close! Try little lower" << endl;
+            }
+        }
+        
+        else if (guess > secret)
+        {
+            /* code */
+            cout << "📉 Too high! Try again: ";
+        }
+        
+        else {
+            cout << "📈 Too low! Try again: ";
+        }
     } while (guess != secret);
     
     return 0;
