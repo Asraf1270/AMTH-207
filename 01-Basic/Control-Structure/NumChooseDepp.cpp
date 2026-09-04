@@ -30,11 +30,11 @@ int main() {
         else if (guess > secret)
         {
             /* code */
-            cout << "📉 Too high! Try again: ";
+            cout << "📉 Too high! Try again: " << endl;
         }
         
         else {
-            cout << "📈 Too low! Try again: ";
+            cout << "📈 Too low! Try again: " << endl;
         }
     } while (guess != secret);
     
